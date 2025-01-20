@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      The Ohio Naturalist | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+  /* Heading Styles */
+.h1head,.h3head,.h4head {
+        clear: both;
+        display: block;
+        text-indent: 0em;
+        text-align: center;
+        font-weight: bold;
+        page-break-before: avoid; }
+
+    .h1head {
+        margin: 1em 5% 1em;
+        font-size: 200%; }
+    .h3head {
+        margin: 3em 5% 1em;
+        font-size: 140%; }
+    .h4head {
+        margin: 1em 5% 1em;
+        font-size: 120%; }
+
+div.chapter {page-break-before: always;
+             margin-top: 4em;}
+
+/* Paragraph styles */
+p {text-indent: 1.25em;
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;}
+
+.unindent {text-indent: 0em;
+            margin-top: .51em;
+            text-align: justify;
+            margin-bottom: .49em;}
+
+p.hanging {margin-left: 1em;
+           text-indent: -1em;}
+
+.pneg {margin-top: -1.5em;} /* used in ad */
+.p0 {margin-top: -.51em;}
+.p2 {margin-top: 2em;}
+.p4 {margin-top: 4em;}
+.p8 {margin-top: 8em;}
+.flushright {text-align: right;}
+.r2        { margin-right: 2em; } /* used 2nd page */
+.indent50 {margin-left: 35%;}
+
+.center   {text-align: center;
+           text-indent: 0em;}
+
+/* justified text title page */
+span.volume { display:inline-block; text-align:left; width:30%; }
+span.date { display:inline-block; text-align:center; width:40%; }
+span.number {display:inline-block; text-align:right; width:30%; }
+
+/* Font styling */
+.smcap  {font-style: normal; font-variant: small-caps;}
+em {font-weight:bold;}
+.smaller {font-size: 83%;}
+.muchsmaller {font-size: 75%;}
+.xxs {font-size: 50%;}
+.large {font-size: 110%;}
+.larger {font-size: 120%;}
+.muchlarger {font-size: 150%;}
+.author {font-style: italic;} /* used in TOC */
+.department {font-style: italic;} /* used title page */
+strong {font-weight: bold;}
+.caption {font-weight: bold;
+         text-align: center;
+          page-break-before: avoid;}
+.captionleft {font-weight: bold;
+         text-align: left;
+          page-break-before: avoid;}
+
+abbr { border:none; text-decoration:none; font-variant:normal; }
+
+/* Links */
+a:visited {text-decoration:none; color: red;}
+a:link {text-decoration:none;} /* no UL of links - for accessibility */
+
+/* Rules */
+hr { /*default rule across entire width */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+  hr.short  {
+   margin-right:45%;
+   margin-left:45%;
+   text-align:center;
+   width:10%;
+  }
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figcenter {
+    margin: 2em auto 1em auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+    text-align: center; /* this aligns the illo, not text */
+}
+
+p.drop-cap { /* for dropped caps without image */
+  text-indent: 0em;
+}
+p.drop-cap:first-letter
+{
+  float: left;
+  margin: 0.15em 0.1em 0em 0em;
+  font-size: 250%;
+  line-height:0.85em;
+}
+.x-ebookmaker  p.drop-cap:first-letter
+{
+  float: none;
+  margin: 0;
+  font-size: 100%;
+}
+
+/* Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  /* I added this */
+}
+
+.tdl {text-align: left;}
+.tdr {text-align: right;}
+.tdc {text-align: center;}
+
+.tdh {text-align: left; /* hanging indent */
+         padding-left: 2em;
+         margin-left: 1em;
+         text-indent: -1em;}
+
+.colwidth {width: 3em;}
+.pad1 {padding: 0 0 0 1em;} /* max height of plants */
+.pad2 {padding: 0 0 0 2em;} /* used title page */
+.pad3 {padding: .75em 0 0 0;} /* used in TOC */
+.pad4 {padding: 0 .5em 0 0;} /* max height of plants */
+.pad5 {padding: 0 0 0 3em;} /* used in advert */
+.pad6 {padding: .5em 0 .5em 0;} /* table of Ohio birds */
+.vlb {vertical-align: bottom;} /* used */
+.vlt {vertical-align: top;}
+
+/* the following to hand make boxes extending over more than one cell */
+    .t   {border-top-style: double;}
+    .l   {border-left: solid thin;}
+    .b   {border-bottom: solid thin;}
+    .bt  {border-top: 2px solid;}
+
+table.a {text-decoration:none;} /* no UL of links inside table*/
+
+/* Unordered Lists */
+ul { list-style-type: none; }
+li {
+    margin-top: 0;
+    margin-left: 3em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+
+.sidenote {
+    width: 15%;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-right: 1em;
+    float: left;
+    clear: left;
+    margin-top: 1em;
+    color: black;
+    border: 1px solid;
+}
+
+.box   {border: solid .1em; /* for ads, cover etc */
+       /* border-style: double; eliminate above line to use this one*/
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: .5em 2em .5em 2em;}
+
+    </style>
+ </head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of The Ohio naturalist, Vol. 1, No. 3, January, 1901, by Various</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: The Ohio naturalist, Vol. 1, No. 3, January, 1901</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Various</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: June 15, 2023 [eBook #70983]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Credits: Carol Brown and the Online Distributed Proofreading Team at https://www.pgdp.net. (This file was produced from images generously made available by The Internet Archive.)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK THE OHIO NATURALIST, VOL. 1, NO. 3, JANUARY, 1901 ***</div>
+
+<div class="chapter"><!--title page-->
+<div class="box">
+<p class="center muchlarger">THE OHIO</p>
+<h1 class="h1head">Naturalist</h1>
+
+<p class="center muchsmaller">PUBLISHED BY</p>
+<p class="center larger">THE BIOLOGICAL CLUB OF THE OHIO STATE UNIVERSITY</p>
+</div><!--end box-->
+
+<div class="box">
+<p class="center">EDITORIAL STAFF</p>
+
+<p class="center"><span class="smcap">Editor-in-chief</span>—JOHN H. SCHAFFNER, A. M., M. S.</p>
+
+<table class="smaller">
+
+<tr><td class="tdc"><span class="smcap">Associate Editors</span>:</td>
+    <td class="tdc"><span class="smcap">Advisory Board</span>:</td></tr>
+
+<tr><td class="tdl"><span class="department">Zoology</span>—F. L. LANDACRE, B. Sc.</td>
+    <td class="tdl pad2">PROFESSOR W. A. KELLERMAN, Ph. D.</td></tr>
+
+<tr><td class="tdl"><span class="department">Botany</span>—F. J. TYLER, B. Sc.</td>
+    <td class="tdc">Department of Botany.</td></tr>
+
+<tr><td class="tdl"><span class="department">Geology</span>—J. A. BOWNOCKER, D. Sc.</td>
+    <td class="tdl pad2">PROFESSOR HERBERT OSBORN, M. Sc.</td></tr>
+
+<tr><td class="tdl"><span class="department">Archaeology</span>—W. C. MILLS, B. Sc.</td>
+    <td class="tdc">Department of Zoology.</td></tr>
+    
+<tr><td class="tdl"><span class="department">Ornithology</span>—R. F. GRIGGS.</td>
+    <td class="tdl pad2">PROFESSOR J. A. BOWNOCKER, D. Sc.</td></tr>
+
+<tr><td></td>
+    <td class="tdc">Department of Geology.</td></tr>
+</table>
+</div><!--end box-->
+
+<div class="box">
+<p class="center">
+<span class="volume">Volume 1.</span><span class="date">January, 1901</span><span class="number">Number 3</span></p>
+<br class="p8">
+</div><!--end box-->
+
+<div class="box">
+<p class="center">COLUMBUS, OHIO</p>
+<p class="center xxs"><cite>PRESS OF HANN &amp; ADAIR</cite></p>
+</div><!--end box-->
+</div><!--end chapter--><!--end title page-->
+
+<div class="chapter">
+<div class="sidenote center"><i>THE OHIO
+NATURALIST</i></div>
+
+<p>A journal devoted more especially to the
+natural history of Ohio. The official organ
+of <span class="smcap">The Biological Club of the Ohio
+State University</span>. Published monthly
+during the academic year, from November
+to June (8 numbers). Price 50 cents per year, payable in advance.
+To foreign countries, 75 cents. Single copies 10 cents.</p>
+
+<div class="indent50">
+ <p class="unindent"><span class="smcap">John H. Schaffner</span>, <i>Editor</i>.<br>
+ <span class="smcap">F. J. Tyler</span>, <i>Subscriptions</i>.<br>
+ <span class="smcap">R. F. Griggs</span>, <i>Advertising Agent</i>.</p>
+</div>
+<p><i>Address</i></p>
+<p class="center">THE OHIO NATURALIST, Ohio State University,</p>
+<p class="flushright r2">COLUMBUS, OHIO.</p>
+
+<hr>
+
+<p class="p4 center">CONTENTS</p>
+
+<table>
+
+<tr><td class="tdl pad3">Notes on the Self-pruning of Trees</td>
+    <td class="tdr  pad3 colwidth"><a href="#Page_29">29</a></td></tr>
+<tr><td colspan="2" class="tdc"><span class="author">John H. Schaffner and Fred. J. Tyler</span></td></tr>
+
+<tr><td class="tdl pad3">Plant Names Commemorative of Ohio Botanists</td>
+    <td class="tdr pad3"><a href="#Page_33">33</a></td></tr>
+<tr><td colspan="2" class="tdc"><span class="author">Clara Armstrong</span></td></tr>
+
+<tr><td class="tdl pad3">The Maximum Height of Plants II.</td>
+    <td class="tdr pad3"><a href="#Page_39">39</a></td></tr>
+<tr><td colspan="2" class="tdc"><span class="author">John H. Schaffner</span></td></tr>
+
+<tr><td class="tdl pad3">Campus Birds</td>
+    <td class="tdr pad3"><a href="#Page_40">40</a></td></tr>
+<tr><td colspan="2" class="tdc"><span class="author">Robert F. Griggs</span></td></tr>
+
+<tr><td class="tdl pad3">Minor Plant Notes No. 1</td>
+    <td class="tdr pad3"><a href="#Page_46">46</a></td></tr>
+<tr><td colspan="2" class="tdc"><span class="author">W. A. Kellerman</span></td></tr>
+
+<tr><td class="tdl pad3">News and Notes</td>
+    <td class="tdr pad3"><a href="#Page_48">48</a></td></tr>
+</table>
+<hr>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h2 class="h1head">The Ohio Naturalist</h2>
+
+<p class="center smaller">PUBLISHED BY</p>
+
+<p class="center">THE BIOLOGICAL CLUB OF THE OHIO STATE UNIVERSITY</p>
+
+<hr>
+<p class="center"><span class="volume">Vol. 1.</span><span class="date">JANUARY, 1901</span><span class="number">No. 3</span></p>
+<hr>
+
+<h3 class="h3head"><a id="Page_29"></a>NOTES ON THE SELF-PRUNING OF TREES.</h3>
+
+<h4 class="h4head"><span class="smcap">John H. Schaffner and Fred J. Tyler.</span></h4>
+
+<p>In a dense forest of growing trees the smaller, side branches of
+the main stem, as well as those of the larger branches, are continually
+dying off. But the tree rids itself of these dead branches by
+forming a collar of tissue from the cambium layer around the base
+of the branch, which presses more tightly as layer after layer of living
+wood is added, until the branch finally falls off and the hole which
+is left is grown over in a short time. This process is known as
+natural pruning. But the process which we wish to consider is
+very different from this, and we desire to distinguish it by the term,
+self-pruning. In this case the living branches are cut off or else the
+cutting-off process is the cause of the death of the branch. A
+special adaptation is provided to accomplish the result and the process
+is one whose purpose is the shedding of the branches rather
+than the attempt to accommodate the plant to conditions of injury
+brought about by other causes. In a number of species perfectly
+formed winter buds were developed on the branches which were
+shed, and so far as our observations go, the twigs are cast in the
+fall and winter.</p>
+
+<p>Although the shedding of branches is well known, especially in
+the conifers, not as much notice has been taken of it as we think it
+deserves. We have been taking observations for several years and
+have been partly anticipated by Dr. Bessey in a note in <i>Science</i> 12.
+650, 1900,—Botanical Notes—The Annual Shedding of Cottonwood
+Twigs. Bessey describes the shedding of the twigs of Populus
+deltoides as occurring about the middle of October, and after giving
+the details of the process, concludes as follows: “It is an interesting
+fact that the Tamarisks (Tamarix sp.) which are held by some
+botanists to be closely related to the Poplars, shed their twigs by
+exactly the same device as that described above. In the Tamarisks
+the shedding of the twigs is a part of the annual process of defoliation,
+their leaves being so small that it appears to be less trouble
+and expense to drop twig and all than to separate every individual
+leaf. Possibly in the Cottonwoods, with their large leaves, we have
+a survival of the Tamarisk twig-shedding habit long after its
+original significance has disappeared.” Dr. Bessey, however, we
+believe, will not insist on this supposition when he considers that
+the same thing occurs in species of Prunus, Quercus, and other
+widely separated genera.</p>
+
+<div class="figcenter">
+ <img src="images/twigs.png"
+ alt="Four views of twigs">
+ <p class="captionleft"> <span class="smcap">Fig. 1</span>—Twig of Populus alba, showing large basal joint and scars where smaller twigs
+have been detached.</p>
+
+<p class="captionleft"><span class="smcap">Fig. 2</span>—View of basal joint of same twig as Fig. 1.</p>
+
+<p class="captionleft"><span class="smcap">Fig. 3</span>—Twig of Salix nigra, showing position of the brittle zone (<i>a</i>).</p>
+
+<p class="captionleft"><span class="smcap">Fig. 4</span>—Green twig of Ampelopsis cordata, showing joints (<i>a</i>) at the leaf nodes.</p>
+</div><!--end figcenter-->
+
+<p class="p2">The self-pruning of twigs from woody stems, so far as our
+observations go at present, is accomplished in three general ways:
+1st, by the formation of a single joint close to the parent branch;
+2nd, by the formation of a brittle zone near the base of the limbs
+which are to be shed; 3rd, by a series of transverse joints corresponding
+to the leaf nodes.</p>
+
+<p>Among the plants which come in the first class, the most
+striking perhaps, is Populus alba, in which very large branches are
+frequently cut off in such a perfect manner that one might think the
+pruning had been done with a sharp knife. Green twigs from one to
+fifteen years old were found to be shed and no doubt still older ones
+are cut off. The twigs have well-developed winter buds and this is
+also the case in other species of Populus and in certain species of
+Quercus and Prunus. In Quercus alba shed twigs were found from
+one to four years old while in Q. acuminata there were some seven
+years of age. In Prunus serotina twigs from one to six years old
+were cut off. In Ulmus Americana not only are joints formed at
+the base of the twigs, but the twigs also break apart at the nodes,
+caused by annual growth.</p>
+
+<p>The following species were found belonging to the first class:</p>
+
+<ul>
+<li>Populus alba L.</li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  deltoides Marsh.</span></li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  grandidentata Mx.</span></li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  tremuloides Mx.</span></li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  dilatata Ait.</span></li>
+<li>Quercus alba L.</li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  robur L.</span></li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  macrocarpa Mx.</span></li>
+<li><span style="margin-left: 1em;">“&#160; &#160;  acuminata (Mx.) Sarg.</span></li>
+<li>Ulmus americana, L.</li>
+<li>Prunus serotina, Ehrh.</li>
+<li>Tamarix gallica L.</li>
+<li>Tsuga canadensis (L.) Carr.</li>
+</ul>
+
+<p>All the plants found with brittle zones belonged to the willows.
+It is interesting to note that the branches shed may be one to
+several years of age and that certain branches do not develop a
+brittle zone. Salix nigra and S. amygdaloides seem to show the
+character most perfectly and it is remarkable to see how readily the
+branches drop off.</p>
+
+<p>The following species show the adaptation:</p>
+
+<ul>
+<li>Salix nigra Marsh.</li>
+<li><span style="margin-left: 1em;">“&#160;  amygdaloides anders.</span></li>
+<li><span style="margin-left: 1em;">“&#160;  fragilis L.</span></li>
+<li><span style="margin-left: 1em;">“&#160;  alba vitellina (L.) Koch.</span></li>
+<li><span style="margin-left: 1em;">“&#160;  babylonica L.</span></li>
+</ul>
+
+<p>Among those which come in the third class, the most remarkable
+plant observed was Ampelopsis cordata. About the time that
+the leaves are shed nearly all the slender green branches literally
+fall to pieces and drop off. Most of the fruit is on these branches
+and the berries are thus shed at the same time. In the winter the
+plant is remarkable for the few branches left and it looks like an
+artificially pruned vine.</p>
+
+<p>The species observed belonging to this class are the following:</p>
+
+<ul>
+<li>Ampelopsis cordata Mx.</li>
+<li><span style="margin-left: 2em;">“&#160; &#160; &#160; tricuspidata Seib. &amp; Zucc.</span></li>
+<li>Parthenocissus quinquefolia (L.) Planch.</li>
+</ul>
+
+<p>The shedding of the twigs of woody plants may in many cases
+be entirely an adaptation to get rid of the leaves as in the case of the
+dwarf branches of Pines and the young twigs of Tamarisks. But
+even in the Tamarisks it is doubtful whether the joints formed in the
+older branches can be claimed to have such a purpose, since in this
+case the leaves have all been shed with the annual twigs. The
+shedding of the old woody branches may have a different purpose.
+In regard to the trees mentioned above, we think that the process is
+one primarily to rid the tree of surplus branches. This would manifestly
+be an advantage and would give room and opportunity for
+the development of many young leafy shoots every year without
+accumulating too great a mass of useless members. This is certainly
+the case with the poplars and the willows. In no case do we
+think it admissible to say that the adaptation is primarily for the purpose
+of propagation, although this may be a very important incidental
+result in such plants as the willows when growing in wet
+places. In the case of Ampelopsis cordata, the only reasonable explanation
+seems to be a preparation for the winter condition, since
+the branches which are shed do not ripen and the plant has an admirable
+method for shedding its leaves. The slender branches
+would be in great danger of being killed by the cold of winter. The
+shedding of the young branches of Taxodium distichum (L.) Rich. is
+remarkably like that in Tamarix. The slender, dwarf branches
+clothed with the leaves drop off in the fall or the following spring.
+The habit must be quite ancient, as such branches of Taxodium
+distichum miocenum Hr. are very abundantly preserved as fossils.
+In Taxodium mexicanum Carr. the dwarf branches are not shed
+until the second year. Glyptostrobus pendulus Endl. and G. heterophyllus
+Endl. also have deciduous dwarf branches. There are other
+conifers and no doubt many other angiospermous trees which
+possess these interesting adaptations and by careful observations, no
+doubt many interesting ecological facts will be brought to light.</p>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h3 class="h3head"><a id="Page_33"></a>PLANT NAMES COMMEMORATIVE OF OHIO BOTANISTS.</h3>
+
+<h4 class="h4head"><span class="smcap">Clara Armstrong.</span></h4>
+
+<p class="p2">Though Ohio has had fewer botanists than many other States,
+some of these became known wherever botany was cultivated.
+Riddell was one of the pioneer botanists of the west and for six years
+he was a resident of this State. By the publication of his <i>Synopsis</i>
+he contributed largely to Ohio Botany. The names of Sullivant and
+Lesquereux shed still greater luster on our state. Most of the work
+of the former and all of that of the latter was done in Ohio. Several
+others whose names are given below have been industrious students
+of our Flora, and have spent many years if not all their lives within
+our territory. It is a long and interesting list of botanical names
+which commemorates their scientific labors. In the preparation of
+this paper I have been aided materially by Prof. W. A. Kellerman.</p>
+
+<p><span class="smcap">John Leonard Riddell.</span>—Born in Leyden, Mass., Feb. 20th, 1807;
+died in New Orleans, La., Oct. 7, 1863. He graduated from Rensseler
+Institute, Troy, N. Y. He came to Ohio in 1830 and became professor
+of Botany and adjunct Professor of Chemistry in the Medical College
+of Cincinnati. He was an enthusiastic and industrious botanist, and
+collected extensively in many parts of our State. Scarcely any of
+his specimens seem now to be in <a id="chg1"></a>existence though he prepared sets
+for sale and accumulated a large herbarium. His most important
+publication was the Synopsis of the Flora of the Western States.
+He also published a Supplementary Catalogue of Ohio Plants. In
+1836 he left Ohio, carrying his botanical specimens to New Orleans
+where he became professor in a Medical College; he was also in the
+employ of the government until his death. He furnished many notes
+and longer articles to scientific journals and was the author of many
+new species of plants. The following have been named in his honor:</p>
+
+<ul>
+<li>Riddellia, synonym of Psilostrophe, a genus of the Compositae family.</li>
+<li>Solidago Riddellii, a species of Golden Rod.</li>
+<li>Senecio Riddellii, synonym of S. Douglasii, a species of Compositae.</li>
+</ul>
+
+<p><span class="smcap">William Starling Sullivant.</span>—Born in Franklinton, Ohio,
+Jan. 18, 1803, died in Columbus, Ohio, April 30, 1873. He was educated
+at Ohio University and Yale. The death of his father at the
+time of his graduation prevented him from studying for one of the
+learned professions and he became a surveyor and practical engineer,
+which occupation he followed until late in life. During this time he
+collected and studied the plants of central Ohio, and in 1840 he began
+to pay particular attention to Mosses; this became the subject of his
+special study, and he was soon recognized as the most eminent bryologist
+that this country has ever produced.</p>
+
+<p>In 1864 the degree of LL.D. was conferred on Sullivant by Gambier
+College. He was elected to membership in many scientific societies
+both in the United States and Europe. At his death his bryological
+books, collections and preparations of Mosses were given to the Gray
+Herbarium of Harvard University. The remainder of his botanical
+library was bequeathed to the Ohio State University then called the
+Agricultural and Mechanical College. His microscopes were given
+to Starling Medical College. Of this institution he was senior trustee.
+He was the author of many new species and the plants named for
+him by other botanists are as follows:</p>
+
+<ul>
+<li>Sullivantia, a genus of the Saxifrages. The name first proposed
+by Gray (1840) for the species discovered by Sullivant was
+Saxifraga Sullivantii; two years later Gray established the
+genus Sullivantia and published the name of the plant in
+question as Sullivantia Ohionis. According to the rules of
+priority that name now stands as Sullivantia Sullivantii.</li>
+<li>Discina Sullivantii, a species of discomycetous fungi.</li>
+<li>Panus Sullivantii, a species of Agaricineae.</li>
+<li>Lentinus Sullivantii, a species of Agaricineae.</li>
+<li>Marasmius Sullivantii, a species of Agaricineae.</li>
+<li>Psilocybe Sullivantii, a species of Agaricineae.</li>
+<li>Boletus Sullivantii, a species of the Polyporeae.</li>
+<li>Polystictus Sullivantii, a species of the Polyporeae.</li>
+<li>Thelephora Sullivantii, a species of the Thelephoreae.</li>
+<li>Cephalozia Sullivantii, a species of Liverwort.</li>
+<li>Jubula Sullivantii, a species of Liverwort.</li>
+<li>Kantia Sullivantii, a species of Liverwort.</li>
+<li>Porella Sullivantii, a species of Liverwort.</li>
+<li>Hypnum Sullivantii, a species of Moss.</li>
+<li>Astomum Sullivantii, a species of Moss.</li>
+<li>Amphoridium Sullivantii, a species of Moss.</li>
+<li>Brachythecium Sullivantii, a species of Moss.</li>
+<li>Bruchia Sullivantii, a species of Moss.</li>
+<li>Cylindrothecium Sullivantii, a species of Moss.</li>
+<li>Fontinalis Sullivantii, a species of Moss.</li>
+<li>Macromitrium Sullivantii, a species of Moss.</li>
+<li>Neckera Sullivantii, a species of Moss.</li>
+<li>Phascum Sullivantii, a species of Moss.</li>
+<li>Pleuridium Sullivantii, a species of Moss.</li>
+<li>Schlotheimia Sullivantii, a species of Moss.</li>
+<li>Eurhynchium Sullivantii, a species of Moss.</li>
+<li>Hookeria Sullivantii, a species of Moss.</li>
+<li>Zygodon Sullivantii, a species of Moss.</li>
+<li>Sphagnum Sullivantianum, a species of Moss.</li>
+<li>Asclepias Sullivantii, a species of Milkweed.</li>
+<li>Lonicera Sullivantii, a species of Honeysuckle.</li>
+<li>Carex Sullivantii, a species of Sedge.</li>
+<li>Callipteridium Sullivantii, a fossil plant.</li>
+</ul>
+
+<p>There were also two species of Mosses named for Mrs. Sullivant
+as follows:</p>
+
+<ul>
+<li>Hypnum Sullivantiae, a pleurocarpous Moss.</li>
+<li>Plagiothecium Sullivantiae, a pleurocarpous Moss.</li>
+</ul>
+
+<p><span class="smcap">Leo Lesquereux.</span>—Born in Fleurier, Switzerland, Nov. 18,
+1806, died in Columbus, Ohio, Oct. 25, 1889. On entering the Academy
+of Neuchatel he met Arnold Guyot and together they became devoted
+to natural science. In 1822 he went to Eisenach preparatory
+to entering the University of Berlin, supporting himself by teaching
+French. He was principal of a college at Chaux de Fonds but had
+to give this up on account of deafness. From this time he did
+engraving, made watch springs, and studied Mosses and fossil
+plants.</p>
+
+<p>In 1848 Lesquereux came to America settling at Cambridge,
+where he assisted Louis Agassiz; but he soon removed to Columbus,
+Ohio, where he lived until his death. He was a worthy associate of
+William S. Sullivant to whom in fact he was indebted by the most
+commendable generosity. He was a paleo-botanist and a student of
+Mosses. Many plants are named for him including a large number
+of fossil forms.</p>
+
+<ul>
+
+<li>Lesquerella, a genus of Cruciferae.</li>
+<li>Lesquereuxia, synonym of Siphonostegia, a genus of Scrophulariaceae.</li>
+<li>Hysterographium Lesquereuxii, a species of Pyrenomycetous Fungi.</li>
+<li>Webera Lescuriana, a species of Moss.</li>
+<li>Bryum Lescurianum, a species of Moss.</li>
+<li>Archidium Lescurii, a species of Moss.</li>
+<li>Atrichum Lescurii, a species of Moss.</li>
+<li>Fontinalis Lescurii, a species of Moss.</li>
+<li>Hypnum Lescurii, a species of Moss.</li>
+<li>Orthotrichum Lescurii, a species of Moss.</li>
+<li>Sphagnum Lescurii, a species of Moss.</li>
+<li>Thelia Lescurii, a species of Moss.</li>
+<li>Alyssum Lescurii, a species of the Mustard Family.</li>
+<li>Lepidophoroxs Lesquereuxii, a fossil plant.</li>
+<li>Lepidodendrum Lesquereuxii, synonym of L. clypeatum, a fossil plant.</li>
+<li>Sphenopteris Lesquereuxii, a fossil plant.</li>
+<li>Sphaerites Lesquereuxii, a fossil plant.</li>
+<li>Persoonia Lesquereuxii, a fossil plant.</li>
+<li>Buthotrephis Lesquereuxii, a fossil plant.</li>
+<li>Pecopteris Lesquereuxii, a fossil plant.</li>
+<li>Cardiocarpon Lescurianum, a fossil plant.</li>
+<li>Triphyllopteris Lescuri, a fossil plant.</li>
+<li>Odontopteris Lescurii, a fossil plant.</li>
+<li>Sigillaria Lescurii, a fossil plant.</li>
+<li>Sphenopteris Lescuriana, a fossil plant.</li>
+<li>Taeniopteris Lescuriana, a fossil plant.</li>
+<li>Triphyllopteris Lescuriana, a fossil plant.</li>
+<li>Rhabdocarpus Lescurianus, a fossil plant.</li>
+<li>Thinfeldia Lesquereuxiana, a fossil plant.</li>
+<li>Laurinoxylon Lesquereuxiana, a fossil plant.</li>
+</ul>
+
+<p><span class="smcap">John Strong Newberry.</span>—Born at Windsor, Conn., Dec. 22,
+1822, died in New York, Dec. 7, 1892. He graduated from Western
+Reserve College 1846 and from Cleveland Medical College 1848. He
+studied abroad for two years and then practiced medicine in Cleveland
+until 1855 when he was appointed acting Surgeon and Geologist
+to an exploring expedition through the country between San Francisco
+and the Columbia River. He went on several of these
+expeditions studying the botanical, zoological, and geological
+features of the country. In 1869 he was appointed Chief Geologist
+to the Geological Survey of Ohio.</p>
+
+<p>In 1859 Newberry published the first State Catalogue of Ohio
+Plants. About 1865 he was made professor of Geology and palaeontology
+at Columbia College School of Mines which position he held
+until his death. His chief botanical work was in palaeo-botany
+though quite a number of living plants as well as many fossil species
+commemorate his name.</p>
+
+<ul>
+<li>Newberrya, a genus of the Indian Pipe Family.</li>
+<li>Gentiana Newberryi, a species of Gentian.</li>
+<li>Abutilon Newberryi, a species of Malvaceae.</li>
+<li>Leptosyne Newberryi, a species of Compositae.</li>
+<li>Pentstemon Newberryi, synonym of P. menziesii, a species of Scrophulariaceae.</li>
+<li>Potentilla Newberryi, <a id="chg2"></a>synonym of Ivesia gracillis, a species of Rosaceae.</li>
+<li>Ferula Newberryi, synonym of Peucedanum Newberryi, a species Umbellifereae.</li>
+<li>Astagolyous (Oxytropis) Newberryi, a species of the Leguminous Family.</li>
+<li>Notholaena Newberryi, a species of Fern.</li>
+<li>Physaria Newberryi, a species of Fern.</li>
+<li>Coloptera Newberryi, a species of Fern.</li>
+<li>Leucampyx Newberryi, a species of Fern.</li>
+<li>Cardiocarpon Newberryi, a fossil plant.</li>
+<li>Dadoxylon Newberryi, a fossil plant.</li>
+<li>Odontopteris Newberryi, a fossil plant.</li>
+<li>Cordaites Newberryi, a fossil plant.</li>
+<li>Pseudopecopteris Newberryi, a fossil plant, synonym of Sphenopteris Newberryi.</li>
+<li>Dictyophylon Newberryi, a fossil plant.</li>
+<li>Cardiocarpus Newberryi, a fossil plant.</li>
+<li>Archaeopholon Newberryanum, a fossil plant.</li>
+<li>Viburnum Newberryanum, a fossil plant.</li>
+<li>Celastrophyllum Newberryanum, a fossil plant.</li>
+<li>Pecopteris Newberryana, a fossil plant.</li>
+<li>Taeniopteris Newberryana, a fossil plant.</li>
+<li>Platanus Newberryana, a fossil plant.</li>
+<li>Laurus Newberryana, a fossil plant.</li>
+<li>Myrica Newberryana, a fossil plant.</li>
+<li>Salix Newberryana, a fossil plant.</li>
+</ul>
+
+<p><span class="smcap">H. C. Beardslee.</span>—Born in Connecticut. Died December, 1884,
+in Painesville, O. He came to Ohio and became a practicing physician
+at Painesville. He published the second State Catalogue of Ohio
+Plants in 1874. This was a pamphlet of nineteen pages; it was reprinted
+in the State Agricultural reports of 1877. After his death Dr.
+Beardslee’s herbarium of about 4000 species, especially rich in Carices,
+Grasses, and Salices, was given to Oberlin College. The following
+species was named in his honor:</p>
+
+<ul>
+<li>Chantransia violacea Beardslei, a species of fresh-water Alga.</li>
+</ul>
+
+<p><span class="smcap">Andrew Price Morgan.</span>—Born at Centerville near Dayton,
+Oct. 27, 1836, now living in Hamilton County. He has done much
+toward the development of Mycology in this country. He has made
+known a large number of higher fungi of the south-eastern part of
+Ohio. He is the author of many new species. A number of plants belonging
+to the group of Fungi have been named in his honor, as follows:</p>
+
+<ul>
+<li>Boletus Morgani, a species of Polyporeae.</li>
+<li>Polyporus Morgani, a species of Polyporeae.</li>
+<li>Lepiota Morgani, a species of Leucosporeae.</li>
+<li>Russela Morgani, a species of Leucosporeae.</li>
+<li>Cantharellus Morgani, a species of Leucosporeae.</li>
+<li>Hypoxylon Morgani, a species of Pyrenomycetaceae.</li>
+</ul>
+
+<p>There is also one species of Agaricineae named for Mrs. Morgan:</p>
+
+<ul>
+<li>Hygrophorus Laurae, a species of Fungus.</li>
+</ul>
+
+<p><span class="smcap">William Ashbrook Kellerman.</span>—Born at Ashville, Ohio
+May 1, 1850. He was educated at Cornell and the German Universities,
+receiving the degree of Ph.D. in 1881.</p>
+
+<p>For a time he was teacher of natural science in the Wisconsin
+State Normal School, later was professor of Botany and Zoology at
+the Kansas Agricultural College, State Botanist of Kansas, and
+Botanist of the Kansas Experiment Station. He was the founder and
+editor (for four years) of the Journal of Mycology. He has held the
+position of Professor of Botany in the Ohio State University since
+1890 and is the author of a number of text-books and articles for botanical
+journals. He has accumulated a very large and valuable
+private Herbarium of parasitic fungi, and a State Herbarium of the
+Flora of Ohio for the Ohio State University that already numbers
+many thousands of mounted sheets. The names given by botanists
+complimentary to his work are as follows:</p>
+
+<ul>
+<li>Kellermannia, a genus of Sphaeropsideous fungi.</li>
+<li>Aecidium Kellermannii, a species of Uredineae.</li>
+<li>Plasmopora Kellermannii, a species of Phycomycetous Fungi.</li>
+<li>Rosellinia Kellermannii, a species of Sphaeriaceous Fungi.</li>
+<li>Rhabdospora Kellermannii, a species of Sphaeropsideous Fungi.</li>
+<li>Diaporthe Kellermanniana, a species of Pyrenomycetous Fungi.</li>
+<li>Physcomitrium Kellermani, a species of acrocarpous Moss.</li>
+</ul>
+
+<p><span class="smcap">Miss H. F. Biddlecome.</span>—Of Columbus, formerly of Springfield,
+assiduously collected and studied the flora of Greene and
+Champaign counties, Ohio. She discovered a species of Moss and
+one of Liverwort which have been named in her honor.</p>
+
+<ul>
+<li>Bryum Biddlecomiae, a pleurocarpous Moss.</li>
+<li>Trichocolea Biddlecomiae, a species of Hepaticae, or Liverwort.</li>
+</ul>
+
+<p><span class="smcap">F. D. Kelsey.</span>—Born at New Washington, Ind., Feb. 15, 1849,
+but early moved to southern Ohio where he lived until 1856, when he
+moved to Columbus. He was graduated from Marietta College in
+1870. The next year he went to Andover Theological Seminary where
+he graduated in 1874. He served Congregational Churches until 1885
+when he moved to Helena, Montana. Here he made collections and
+distributed the local flora. The College of Montana conferred on
+him the degree of Sc. D.</p>
+
+<p>In 1892 he was elected Professor of Botany at Oberlin College,
+which position he held until 1897, when he accepted the pastorate of
+the Central Congregational Church in Toledo, which he now holds.
+He is also lecturer on Botany at the Smead School for Girls at Toledo,
+<a id="chg3"></a>Ohio. While professor at Oberlin he published several bulletins of
+local interest, and one monograph of Uncinula, with <a id="chg4"></a>microscopic
+drawings of all American species. There are several species named
+in his honor, as follows:</p>
+
+<ul>
+<li>Kelseya, a monotypic genus of Rosaceae.</li>
+<li>Cucurbitaria Kelseyi, a species of Pyrenomycetous fungi.</li>
+<li>Homostegia Kelseyi, a species of Pyrenomycetous fungi.</li>
+<li>Cryptanthe Kelseyi, a species of Boraginaceae.</li>
+<li>Phlox Kelseyi, a species of Polemoniaceae.</li>
+</ul>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h3 class="h3head"><a id="Page_39"></a>THE MAXIMUM HEIGHT OF PLANTS. II.</h3>
+<h4 class="h4head"><span class="smcap">John H. Schaffner.</span></h4>
+
+<p>Last spring the writer published a few measurements of some
+common western plants in the Asa Gray Bulletin (Vol. 8: 19-20). A few
+other measurements are given below, all from Kansas except four
+which are from Ohio. It would be well for all collectors to keep records
+of the size of the plants which they meet, including measurements
+of the height and also dimensions of the leaves, flowers, fruits
+and underground parts. In this way the manual of the future may
+be brought to represent more accurately the living plant as it grows
+in nature rather than the dried, shrunken and dwarf specimens of
+the herbarium.</p>
+
+<table class="p2">
+<tr><td class="t b"></td>
+    <td class="tdc t b l colwidth">Gray</td>
+    <td class="tdc t b l">Britton</td>
+    <td class="tdc t b l">Measured<br>Feet</td></tr>
+
+<tr><td class="tdl pad4">Agropyrum repens (L.) Beauv.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">4</td>
+    <td class="tdl l pad1">4¾</td></tr>
+<tr><td class="tdl pad4">Asparagus officinalis L.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">7</td>
+    <td class="tdl l pad1">8¾</td></tr>
+<tr><td class="tdl pad4">Polygonum orientale L. (Ohio)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">8</td>
+    <td class="tdl l pad1">9</td></tr>
+<tr><td class="tdl pad4">Allionia nyctaginea Michx.</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">5</td></tr>
+<tr><td class="tdl pad2">(Oxybaphus nyctagineus Sw.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Silene antirrhina L.</td>
+    <td class="tdl l pad1">2½</td>
+    <td class="tdl l pad1">2½</td>
+    <td class="tdl l pad1">3</td></tr>
+<tr><td class="tdl pad4">Argemone alba Lestib.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">5</td></tr>
+<tr><td class="tdl pad4">Lepidium virginicum L.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">2½</td></tr>
+<tr><td class="tdl pad4">Baptisia leucantha T. &amp; G.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">4</td>
+    <td class="tdl l pad1">5½</td></tr>
+<tr><td class="tdl pad4">Amorpha canescens Nutt.</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">4¾</td></tr>
+<tr><td class="tdl pad4">Kuhnistera candida (Willd.) Kuntze</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">2</td>
+    <td class="tdl l pad1">3¼</td></tr>
+<tr><td class="tdl pad2">(Petalostemon candidus Michx.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Acuan illinoensis (Michx.) Kuntze</td>
+    <td class="tdl l pad1">4</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">8</td></tr>
+<tr><td class="tdl pad2">(Desmanthus brachylobus Benth.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+     <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Meriolix serrulata (Nutt.) Walp.</td>
+    <td class="tdl l pad1">1¼</td>
+    <td class="tdl l pad1">1½</td>
+    <td class="tdl l pad1">2½</td></tr>
+<tr><td class="tdl pad2">(Oenothera serrulata Nutt.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Gaura biennis L.</td>
+    <td class="tdl l pad1">8</td>
+    <td class="tdl l pad1">5</td>
+    <td class="tdl l pad1">10½</td></tr>
+<tr><td class="tdl pad4">Apocynum cannabinum L.</td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">8</td></tr>
+<tr><td class="tdl pad4">Marrubium vulgare L.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">3</td>
+    <td class="tdl l pad1">3½</td></tr>
+<tr><td class="tdl pad4">Datura tatula L. (Ohio)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">5</td>
+    <td class="tdl l pad1">7</td></tr>
+<tr><td class="tdl pad4">Verbascum thapsus L. (Ohio)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">7</td>
+    <td class="tdl l pad1">8</td></tr>
+<tr><td class="tdl pad4">Cicuta maculata L.</td>
+    <td class="tdl l pad1">6</td>
+    <td class="tdl l pad1">6</td>
+    <td class="tdl l pad1">7⅓</td></tr>
+<tr><td class="tdl pad4">Symphoricarpos symphoricarpos (L.) MacM.</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">5</td>
+    <td class="tdl l pad1">8</td></tr>
+<tr><td class="tdl pad2">(S. vulgaris Michx.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Dipsacus fullonum L. (Ohio)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1">6</td>
+    <td class="tdl l pad1">7½</td></tr>
+<tr><td class="tdl pad4">Legouzia perfoliata (L.) Britt.</td>
+    <td class="tdl l pad1">1⅔</td>
+    <td class="tdl l pad1">2</td>
+    <td class="tdl l pad1">3</td></tr>
+<tr><td class="tdl pad2">(Specularia perfoliata A. D. C.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl pad4">Ratibida columnaris (Sims) D. Don</td>
+    <td class="tdl l pad1">2</td>
+    <td class="tdl l pad1">2½</td>
+    <td class="tdl l pad1">2⅚</td></tr>
+<tr><td class="tdl pad2">(Leptachys columnaris T. &amp; G.)</td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td>
+    <td class="tdl l pad1"></td></tr>
+<tr><td class="tdl b pad4">Achillea millefolium L.</td>
+    <td class="tdl l b pad1"></td>
+    <td class="tdl l b pad1">2</td>
+    <td class="tdl l b pad1">2½</td></tr>
+</table>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h3 class="h3head"><a id="Page_40"></a>CAMPUS BIRDS</h3>
+
+<p class="center"><span class="smcap">A List of Birds Recorded by the Wheaton Ornithological</span><br>
+<span class="smcap">Club, for the O. S. U. Farm and Campus.</span></p>
+
+<h4 class="h4head"><span class="smcap">Robert F. Griggs.</span></h4>
+
+<p>The first list of Campus birds was published by the Wheaton
+Club in the “Agricultural Student” for March, 1898. Since that
+time a number of additional species have been reported and it has
+been thought advisable to republish the entire list, inserting the
+additions in their proper places. The list below contains 137 species.
+It is compiled from the records of the Wheaton Club, excepting
+those species for which Prof. J. R. Taylor is given credit. Only
+those species of which nests, eggs, or fledgelings have been observed
+are reported as breeding. The names are preceded by the
+A. O. U. check list number. Further additions will be published
+from time to time.</p>
+
+<table>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Pygopodes</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Podicipidae</span>. <span class="smcap">Grebes.</span></td></tr>
+<tr><td class="tdl pad1 vlt">6.</td>
+    <td class="tdh">Podilymbus podiceps (Linn.) Pied-billed Grebe, occasional.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Anseres</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Anatidae</span>. <span class="smcap">Ducks</span>, <span class="smcap">Geese</span>, etc.</td></tr>
+<tr><td class="tdl vlt">137.</td>
+    <td class="tdh">Anas americana Gmel. American Widgeon, Bald-pate, occasional.</td></tr>
+<tr><td class="tdl vlt">154.</td>
+    <td class="tdh">Clangula hyemalis (Linn.) Old squaw, occasional.</td></tr>
+<tr><td class="tdl vlt">172.</td>
+    <td class="tdh">Branta canadensis (Linn.) Canada Goose, regular migrant.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Herodiones</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Ardeidae</span>. <span class="smcap">Herons</span> and <span class="smcap">Bitterns</span>.</td></tr>
+<tr><td class="tdl vlt">190.</td>
+    <td class="tdh">Botaurus lentiginosus (Montag.) American Bittern.</td></tr>
+<tr><td class="tdl vlt">191.</td>
+    <td class="tdh">Ardetta exilis (Gmel.) Least Bittern, accidental. (J. R. Taylor.)</td></tr>
+<tr><td class="tdl vlt">194.</td>
+    <td class="tdh">Ardea herodias Linn. Great Blue Heron.</td></tr>
+<tr><td class="tdl vlt">201.</td>
+    <td class="tdh">Ardea virescens Linn. Green Heron, common, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Paludicolae</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Rallidae</span>. <span class="smcap">Rails</span>, <span class="smcap">Gallinules</span>, etc.</td></tr>
+<tr><td class="tdl vlt">221.</td>
+    <td class="tdh">Fulica Americana Gmel. Coot, occasional.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Limicolae</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Scolopacidae</span>. <span class="smcap">Snipes</span>, <span class="smcap">Sandpipers</span>, etc.</td></tr>
+<tr><td class="tdl vlt">228.</td>
+    <td class="tdh">Philohela minor (Gmel.) American Woodcock.</td></tr>
+<tr><td class="tdl vlt">230.</td>
+    <td class="tdh">Gallinago delicata (Ord.) Wilson’s Snipe.</td></tr>
+<tr><td class="tdl vlt">256.</td>
+    <td class="tdh">Totanus solitarius (Wils.) Solitary Sandpiper, occasional.</td></tr>
+<tr><td class="tdl vlt">263.</td>
+    <td class="tdh">Actitis macularia (Linn.) Spotted Sandpiper, common.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Charadriidae</span>. <span class="smcap">Plovers.</span></td></tr>
+<tr><td class="tdl vlt">273.</td>
+    <td class="tdh">Ægialitis vocifera (Linn.) Killdeer, common, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Gallinae</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Tetraonidae</span>. <span class="smcap">Grouse</span>, etc.</td></tr>
+<tr><td class="tdl vlt">289.</td>
+    <td class="tdh">Colinus virginianus (Linn.) Quail, generally one or two flocks, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Columbae</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Columbidae</span>. <span class="smcap">Pigeons</span> and <span class="smcap">Doves</span>.</td></tr>
+<tr><td class="tdl vlt">316.</td>
+    <td class="tdh">Zenaidura macroura (Linn.) Mourning dove, abundant, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Raptores</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Cathartidae</span>. <span class="smcap">American Vultures.</span></td></tr>
+<tr><td class="tdl vlt">325.</td>
+    <td class="tdh">Cathartes aura (Linn.) Turkey Buzzard, occasional.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Falconidae</span>. <span class="smcap">Hawks.</span></td></tr>
+<tr><td class="tdl vlt">333.</td>
+    <td class="tdh">Accipiter cooperi (Bonap.) Cooper’s hawk, occasional.</td></tr>
+<tr><td class="tdl vlt">337.</td>
+    <td class="tdh">Buteo borealis (Gmel.) Red-tailed hawk, occasional.</td></tr>
+<tr><td class="tdl vlt">343.</td>
+    <td class="tdh">Buteo latissimus (Wils.) Broad-winged hawk.</td></tr>
+<tr><td class="tdl vlt">360.</td>
+    <td class="tdh">Falco sparverius Linn. American sparrow hawk, common, breeds.</td></tr>
+<tr><td class="tdl vlt">364.</td>
+    <td class="tdh">Pandion haliaetus carolinensis (Gmel.) American Osprey, accidental, reported by Mr. C. B. Morrey, during a spring flood.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Bubonidae</span>. <span class="smcap">Horned Owls.</span></td></tr>
+<tr><td class="tdl vlt">373.</td>
+    <td class="tdh">Megascops asio (Linn.) Screech Owl, common, breeds.</td></tr>
+<tr><td class="tdl vlt">375.</td>
+    <td class="tdh">Bubo virginianus (Gmel.) Great Horned Owl, occasional.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Coccyges</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Cuculidae</span>. <span class="smcap">Cuckoos</span>, etc.</td></tr>
+<tr><td class="tdl vlt">387.</td>
+    <td class="tdh">Coccyzus americanus (Linn.) Yellow-billed Cuckoo, common, breeds.</td></tr>
+<tr><td class="tdl vlt">388.</td>
+    <td class="tdh">Coccyzus erythrophthalmus (Wils.) Black-billed Cuckoo.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Alcedinidae</span>. <span class="smcap">Kingfishers.</span></td></tr>
+<tr><td class="tdl vlt">390.</td>
+    <td class="tdh">Ceryle alcyon (Linn.) Belted King-fisher, common, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Pici</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Picidae</span>. <span class="smcap">Woodpeckers.</span></td></tr>
+<tr><td class="tdl vlt">393.</td>
+    <td class="tdh">Dryobates villosus (Linn.) Hairy Woodpecker, common, resident.</td></tr>
+<tr><td class="tdl vlt">394.</td>
+    <td class="tdh">Dryobates pubescens (Linn.) Downy Woodpecker, common, resident, breeds.</td></tr>
+<tr><td class="tdl vlt">402.</td>
+    <td class="tdh">Sphyrapicus varius (Linn.) Yellow-bellied Sapsucker, migrant.</td></tr>
+<tr><td class="tdl vlt">406.</td>
+    <td class="tdh">Melanerpes erythrocephalus (Linn.) Red-headed Woodpecker, common, breeds.</td></tr>
+<tr><td class="tdl vlt">409.</td>
+    <td class="tdh">Melanerpes carolinus (Linn.) Red-bellied Woodpecker, resident.</td></tr>
+<tr><td class="tdl vlt">412.</td>
+    <td class="tdh">Colaptes auratus (Linn.) Flicker, common resident, breeds.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Macrochires</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Caprimulgidae</span>. <span class="smcap">Night-hawks</span>, etc.</td></tr>
+<tr><td class="tdl vlt">417.</td>
+    <td class="tdh">Antrostomus vociferus (Wils.) Whip-poor-will.</td></tr>
+<tr><td class="tdl vlt">420.</td>
+    <td class="tdh">Chordeiles virginianus (Gmel.) Night-hawk.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Micropodidae</span>. <span class="smcap">Swifts.</span></td></tr>
+<tr><td class="tdl vlt">423.</td>
+    <td class="tdh">Chaetura pelagica (Linn.) Chimney Swift, common, breeds.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Trochilidae</span>. <span class="smcap">Hummingbirds.</span></td></tr>
+<tr><td class="tdl vlt">428.</td>
+    <td class="tdh">Trochilus colubris (Linn.) Ruby-throated Hummingbird.</td></tr>
+<tr><td class="tdc pad3" colspan="2">Ord. <span class="smcap">Passeres</span>.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Tyrannidae</span>. <span class="smcap">Flycatchers.</span></td></tr>
+<tr><td class="tdl vlt">444.</td>
+    <td class="tdh">Tyrannus tyrannus (Linn.) Kingbird, common, breeds.</td></tr>
+<tr><td class="tdl vlt">452.</td>
+    <td class="tdh">Myiarchus crinitus (Linn) Crested Flycatcher.</td></tr>
+<tr><td class="tdl vlt">456.</td>
+    <td class="tdh">Sayornis phoebe (Lath.) Phoebe, common.</td></tr>
+<tr><td class="tdl vlt">461.</td>
+    <td class="tdh">Contopus virens (Linn.) Wood Pewee.</td></tr>
+<tr><td class="tdl vlt">466a.</td>
+    <td class="tdh">Empidonax traillii (Aud.) Traill’s Flycatcher, breeds.</td></tr>
+<tr><td class="tdl vlt">467.</td>
+    <td class="tdh">Empidonax minimus Baird. Least Flycatcher. (J. R. Taylor.)</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Alaudidae</span>. <span class="smcap">Larks.</span></td></tr>
+<tr><td class="tdl vlt">474.</td>
+    <td class="tdh">Otocoris alpestris (Linn.) Shore Lark, winter visitant.</td></tr>
+<tr><td class="tdl vlt">474b.</td>
+    <td class="tdh">Otocoris alpestris praticola Hensh. Prairie Horned Lark.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Corvidae</span>. <span class="smcap">Crows</span>, etc.</td></tr>
+<tr><td class="tdl vlt">477.</td>
+    <td class="tdh">Cyanocitta cristata (Linn.) Blue Jay, common resident, breeds.</td></tr>
+<tr><td class="tdl vlt">488.</td>
+    <td class="tdh">Corvus americanus Aud. Crow, seen at all seasons.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Icteridae</span>. <span class="smcap">Blackbirds</span>, etc.</td></tr>
+<tr><td class="tdl vlt">494.</td>
+    <td class="tdh">Dolichonyx oryzivorus (Linn.) Bobolink, common.</td></tr>
+<tr><td class="tdl vlt">495.</td>
+    <td class="tdh">Molothrus ater (Bodd.) Cowbird, common, breeds.</td></tr>
+<tr><td class="tdl vlt">498.</td>
+    <td class="tdh">Agelaius phoeniceus (Linn.) Red-winged Blackbird.</td></tr>
+<tr><td class="tdl vlt">501.</td>
+    <td class="tdh">Sturnella magna (Linn.) Meadow Lark, common, breeds.</td></tr>
+<tr><td class="tdl vlt">506.</td>
+    <td class="tdh">Icterus spurius (Linn.) Orchard Oriole.</td></tr>
+<tr><td class="tdl vlt">507.</td>
+    <td class="tdh">Icterus galbula (Linn.) Baltimore Oriole, common, breeds.</td></tr>
+<tr><td class="tdl vlt">509.</td>
+    <td class="tdh">Scolecophagus carolinus (Müll.) Rusty Blackbird.</td></tr>
+<tr><td class="tdl vlt">511b.</td>
+    <td class="tdh">Quiscalus quiscula aeneus (Ridgw.) Bronzed Grackle, Crow Blackbird, common, breeds abundantly.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Fringillidae</span>. <span class="smcap">Finches</span> and <span class="smcap">Sparrows</span>.</td></tr>
+<tr><td class="tdl vlt">517.</td>
+    <td class="tdh">Carpodacus purpureus (Gmel.) Purple Finch.</td></tr>
+<tr><td class="tdl">—.</td>
+    <td class="tdh">Passer domesticus (Linn.) English Sparrow, superabundant, breeds.</td></tr>
+<tr><td class="tdl vlt">529.</td>
+    <td class="tdh">Spinus tristis (Linn.) American Goldfinch, common.</td></tr>
+<tr><td class="tdl vlt">533.</td>
+    <td class="tdh">Spinus pinus (Wils.) Pine Siskin.</td></tr>
+<tr><td class="tdl vlt">540.</td>
+    <td class="tdh">Poocaetes gramineus (Gmel.) Vesper Sparrow, common, breeds.</td></tr>
+<tr><td class="tdl vlt">542a.</td>
+    <td class="tdh">Ammodramus sandwichensis savanna (Wils.) Savannah Sparrow.</td></tr>
+<tr><td class="tdl vlt">546.</td>
+    <td class="tdh">Ammodramus savannarum passerinus (Wils.) Grasshopper Sparrow, almost certainly breeds though no nest has been found.</td></tr>
+<tr><td class="tdl vlt">552.</td>
+    <td class="tdh">Chondestes grammacus (Say.) Lark Sparrow.</td></tr>
+<tr><td class="tdl vlt">554.</td>
+    <td class="tdh">Zonotrichia leucophrys (Forst.) White-crowned Sparrow.</td></tr>
+<tr><td class="tdl vlt">558.</td>
+    <td class="tdh">Zonotrichia albicollis (Gmel.) White-throated Sparrow.</td></tr>
+<tr><td class="tdl vlt">559.</td>
+    <td class="tdh">Spizella monticola (Gmel.) Tree Sparrow, common, winter resident.</td></tr>
+<tr><td class="tdl vlt">560.</td>
+    <td class="tdh">Spizella socialis (Wils.) Chipping Sparrow, common, breeds.</td></tr>
+<tr><td class="tdl vlt">563.</td>
+    <td class="tdh">Spizella pusilla (Wils.) Field Sparrow.</td></tr>
+<tr><td class="tdl vlt">567.</td>
+    <td class="tdh">Junco hyemalis (Linn.) Snow-bird, common, winter resident.</td></tr>
+<tr><td class="tdl vlt">581.</td>
+    <td class="tdh">Melospiza fasciata (Gmel.) Song Sparrow, abundant, resident, breeds.</td></tr>
+<tr><td class="tdl vlt">583.</td>
+    <td class="tdh">Melospiza lincolni (Aud.) Lincoln’s Sparrow.</td></tr>
+<tr><td class="tdl vlt">584.</td>
+    <td class="tdh">Melospiza georgiana (Lath.) Swamp Sparrow.</td></tr>
+<tr><td class="tdl vlt">585.</td>
+    <td class="tdh">Passerella iliaca (Merr.) Fox Sparrow.</td></tr>
+<tr><td class="tdl vlt">587.</td>
+    <td class="tdh">Pipilio erythropthalmus (Linn.) Towhee, common resident.</td></tr>
+<tr><td class="tdl vlt">593.</td>
+    <td class="tdh">Cardinalis cardinalis (Linn.) Cardinal, common resident, breeds.</td></tr>
+<tr><td class="tdl vlt">598.</td>
+    <td class="tdh">Passerina cyanea (Linn.) Indigo Bunting, common, breeds.</td></tr>
+<tr><td class="tdl vlt">604.</td>
+    <td class="tdh">Spiza americana (Gmel.) Dickcissel.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Tanagridae</span>. <span class="smcap">Tanagers.</span></td></tr>
+<tr><td class="tdl vlt">608.</td>
+    <td class="tdh">Piranga erythromelas Vieill. Scarlet Tanager.</td></tr>
+<tr><td class="tdl vlt">610.</td>
+    <td class="tdh">Piranga rubra (Linn.) Summer Tanager, May 4, 1899. (J. R. Taylor.)</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Hirundinidae</span>. <span class="smcap">Swallows.</span></td></tr>
+<tr><td class="tdl vlt">611.</td>
+    <td class="tdh">Progne subis (Linn.) Purple Martin, common.</td></tr>
+<tr><td class="tdl vlt">613.</td>
+    <td class="tdh">Chelidon erythrogaster (Bodd.) Barn Swallow, common, breeds.</td></tr>
+<tr><td class="tdl vlt">617.</td>
+    <td class="tdh">Stelgidopteryx serripennis (Aud.) Rough-winged Swallow.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Ampelidae</span>. <span class="smcap">Waxwings.</span></td></tr>
+<tr><td class="tdl vlt">619.</td>
+    <td class="tdh">Ampelis cedrorum (Vieill.) Cedar-bird, Cherry-bird.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Laniidae</span>. <span class="smcap">Shrikes.</span></td></tr>
+<tr><td class="tdl vlt">622.</td>
+    <td class="tdh">Lanius ludovicianus Linn. Loggerhead Shrike.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Vireonidae</span>. <span class="smcap">Vireos.</span></td></tr>
+<tr><td class="tdl vlt">624.</td>
+    <td class="tdh">Vireo olivaceus (Linn.) Red-eyed Vireo, breeds.</td></tr>
+<tr><td class="tdl vlt">627.</td>
+    <td class="tdh">Vireo gilvus (Vieill.) Warbling Vireo, common spring migrant.</td></tr>
+<tr><td class="tdl vlt">628.</td>
+    <td class="tdh">Vireo flavifrons Vieill. Yellow-throated Vireo.</td></tr>
+<tr><td class="tdl vlt">629.</td>
+    <td class="tdh">Vireo solitarius (Wils.) Blue-headed Vireo.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Mniotiltidae</span>. <span class="smcap">Wood Warblers.</span></td></tr>
+<tr><td class="tdl vlt">636.</td>
+    <td class="tdh">Mniotilta varia (Linn.) Black and White Creeper, common migrant.</td></tr>
+<tr><td class="tdl vlt">639.</td>
+    <td class="tdh">Helmitherus vermivorus (Gmel.) Worm-eating Warbler.</td></tr>
+<tr><td class="tdl vlt">641.</td>
+    <td class="tdh">Helminthophila pinus (Linn.) Blue-winged Warbler.</td></tr>
+<tr><td class="tdl vlt">642.</td>
+    <td class="tdh">Helminthophila chrysoptera (Linn.) Golden-winged Warbler. (J. R. Taylor.)</td></tr>
+<tr><td class="tdl vlt">645.</td>
+    <td class="tdh">Helminthophila ruficapilla (Wils.) Nashville Warbler. (J. R. Taylor.)</td></tr>
+<tr><td class="tdl vlt">647.</td>
+    <td class="tdh">Helminthophila peregrina (Wils.) Tennessee Warbler.</td></tr>
+<tr><td class="tdl vlt">648.</td>
+    <td class="tdh">Compsothlypis americana (Linn.) Parula Warbler.</td></tr>
+<tr><td class="tdl vlt">650.</td>
+    <td class="tdh">Dendroica tigrina (Gmel.) Cape May Warbler.</td></tr>
+<tr><td class="tdl vlt">652.</td>
+    <td class="tdh">Dendroica aestiva (Gmel.) Summer Warbler, common, breeds.</td></tr>
+<tr><td class="tdl vlt">654.</td>
+    <td class="tdh">Dendroica caerulescens (Gmel.) Black-throated, Blue Warbler.</td></tr>
+<tr><td class="tdl vlt">655.</td>
+    <td class="tdh">Dendroica coronata (Linn.) Yellow-rumped Warbler, Myrtle Warbler.</td></tr>
+<tr><td class="tdl vlt">657.</td>
+    <td class="tdh">Dendroica maculosa (Gmel.) Magnolia Warbler.</td></tr>
+<tr><td class="tdl vlt">659.</td>
+    <td class="tdh">Dendroica pensylvanica (Linn.) Chestnut-sided Warbler.</td></tr>
+<tr><td class="tdl vlt">660.</td>
+    <td class="tdh">Dendroica castanea (Wils.) Bay-breasted Warbler.</td></tr>
+<tr><td class="tdl vlt">661.</td>
+    <td class="tdh">Dendroica striata (Forst.) Black-poll Warbler, common fall migrant.</td></tr>
+<tr><td class="tdl vlt">662.</td>
+    <td class="tdh">Dendroica blackburniae (Gmel.) Blackburnian Warbler.</td></tr>
+<tr><td class="tdl vlt">667.</td>
+    <td class="tdh">Dendroica virens (Gmel.) Black-throated Green Warbler.</td></tr>
+<tr><td class="tdl vlt">671.</td>
+    <td class="tdh">Dendroica vigorsii (Aud.) Pine Warbler.</td></tr>
+<tr><td class="tdl vlt">672.</td>
+    <td class="tdh">Dendroica palmarum (Gmel.) Palm Warbler.</td></tr>
+<tr><td class="tdl vlt">674.</td>
+    <td class="tdh">Seiurus aurocapillus (Linn.) Ovenbird.</td></tr>
+<tr><td class="tdl vlt">675.</td>
+    <td class="tdh">Seiurus noveboracensis (Gmel.) Water-thrush.</td></tr>
+<tr><td class="tdl vlt">676.</td>
+    <td class="tdh">Seiurus motacilla (Vieill.) Louisiana Water-thrush. (J. R. Taylor.)</td></tr>
+<tr><td class="tdl vlt">677.</td>
+    <td class="tdh">Geothlypis formosa (Wils.) Kentucky Warbler.</td></tr>
+<tr><td class="tdl vlt">678.</td>
+    <td class="tdh">Geothlypis agilis (Wils) Connecticut Warbler.</td></tr>
+<tr><td class="tdl vlt">681.</td>
+    <td class="tdh">Geothlypis trichas (Linn.) Maryland Yellow-throat.</td></tr>
+<tr><td class="tdl vlt">683.</td>
+    <td class="tdh">Icteria virens (Linn.) Yellow-breasted Chat, breeds.</td></tr>
+<tr><td class="tdl vlt">684.</td>
+    <td class="tdh">Sylvania mitrata (Gmel.) Hooded Warbler.</td></tr>
+<tr><td class="tdl vlt">685.</td>
+    <td class="tdh">Sylvania pusilla (Wils.) Wilson’s Warbler. (J. R. Taylor.)</td></tr>
+<tr><td class="tdl vlt">687.</td>
+    <td class="tdh">Setophaga ruticilla (Linn.) American Redstart, common migrant.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Troglodytidae</span>. <span class="smcap">Wrens</span>, etc.</td></tr>
+<tr><td class="tdl vlt">704.</td>
+    <td class="tdh">Galeoscoptes carolinensis (Linn.) Cat-bird, common, breeds abundantly.</td></tr>
+<tr><td class="tdl vlt">705.</td>
+    <td class="tdh">Harporhynchus rufus (Linn.) Brown Thrasher, common, breeds.</td></tr>
+<tr><td class="tdl vlt">718.</td>
+    <td class="tdh">Thryothorus ludovicianus (Lath.) Carolina Wren, common resident, breeds.</td></tr>
+<tr><td class="tdl vlt">721.</td>
+    <td class="tdh">Troglodytes aëdon Vieill. House Wren, common, breeds.</td></tr>
+<tr><td class="tdl vlt">722.</td>
+    <td class="tdh">Troglodytes hiemalis Vieill. Winter Wren.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Certhiidae</span>. <span class="smcap">Creepers.</span></td></tr>
+<tr><td class="tdl vlt">726.</td>
+    <td class="tdh">Certhia familiaris americana (Bonap.) Brown Creeper, common winter visitant.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Paridae</span>. <span class="smcap">Nuthatches</span>, etc.</td></tr>
+<tr><td class="tdl vlt">727.</td>
+    <td class="tdh">Sitta carolinensis Lath. White-breasted Nuthatch, common resident.</td></tr>
+<tr><td class="tdl vlt">728.</td>
+    <td class="tdh">Sitta canadensis Linn. Red-breasted Nuthatch, migrant.</td></tr>
+<tr><td class="tdl vlt">731.</td>
+    <td class="tdh">Parus bicolor (Linn.) Tufted Titmouse, common resident.</td></tr>
+<tr><td class="tdl vlt">735.</td>
+    <td class="tdh">Parus atricapillus (Linn.) Chicadee.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Sylviidae</span>. <span class="smcap">Kinglets</span>, etc.</td></tr>
+<tr><td class="tdl vlt">748.</td>
+    <td class="tdh">Regulus satrapa Licht. Golden-crowned Kinglet, common.</td></tr>
+<tr><td class="tdl vlt">749.</td>
+    <td class="tdh">Regulus calendula (Linn.) Ruby-crowned Kinglet.</td></tr>
+<tr><td class="tdl vlt">751.</td>
+    <td class="tdh">Polioptila caerulea (Linn.) Blue-gray Gnatcatcher.</td></tr>
+<tr><td class="tdc pad6" colspan="2">Fam. <span class="smcap">Turdidae</span>. <span class="smcap">Thrushes</span>, etc.</td></tr>
+<tr><td class="tdl vlt">755.</td>
+    <td class="tdh">Turdus mustelinus Gmel. Wood Thrush, common, breeds.</td></tr>
+<tr><td class="tdl vlt">756.</td>
+    <td class="tdh">Turdus fuscescens Steph. Wilson’s Thrush, Veery.</td></tr>
+<tr><td class="tdl vlt">757.</td>
+    <td class="tdh">Turdus aliciae Baird. Gray-cheeked Thrush.</td></tr>
+<tr><td class="tdl vlt">758a.</td>
+    <td class="tdh">Turdus ustulatus swainsonii (Cab.) Olive-backed Thrush.</td></tr>
+<tr><td class="tdl vlt">759b.</td>
+    <td class="tdh">Turdus aonalaschkae pallasii (Cab.) Hermit Thrush.</td></tr>
+<tr><td class="tdl vlt">761.</td>
+    <td class="tdh">Merula migratoria (Linn.) American Robin, abundant, breeds.</td></tr>
+<tr><td class="tdl vlt">766.</td>
+    <td class="tdh">Sialia sialis (Linn.) Bluebird, common.</td></tr>
+</table>
+</div><!--end chapter-->
+
+
+<div class="chapter">
+<h3 class="h3head"><a id="Page_46"></a>MINOR PLANT NOTES. No. 1.</h3>
+<h4 class="h4head"><span class="smcap">W. A. Kellerman.</span></h4>
+
+<p>An introductory paragraph to this series may be short as will be
+the notes that follow. Suffice therefore to say that from time to
+time the field jottings and short notes of observations on the plants
+of our State flora will be presented. Not only those made myself
+but others which may be kindly communicated to me for this purpose
+by botanists, amateurs, students and other observers will find
+a place in the series. An especial invitation is extended to pupils in
+our High Schools and to teachers throughout the State to contribute
+suitable material which in many cases may be of great interest and
+importance. Sub-heads will be used thus making it possible to scan
+the notes easily.</p>
+
+<p><span class="smcap">Puccinia smilacis.</span>—This Black Rust which has the various
+species of Green Briar for its host, was noticed in extraordinary
+quantity the past season in Scioto, Adams and Brown Counties. It
+was abundant only on Smilax glauca—called in that region the
+Saw Brier—but not uncommonly occurred on S. hispida and S.
+rotundifolia. It was also remarkable in this respect namely that
+the teleutospores (the black or winter spores) were excessively
+abundant: the uredospores (red or summer spores) could be found
+only when search was made. The observation here recorded pertains
+to the first half of the month of November. I have occasionally
+noticed uredospores in quantity on Smilax leaves in the various parts
+of Ohio but never before found the winter-spores common. It should
+perhaps be added parenthetically that <i>Dicœoma</i> having the priority
+over Puccinia is really the generic name that should be used, but the
+commoner designation may here be tolerated.</p>
+
+<p><span class="smcap"><a id="chg5"></a>Quercus acuminata.</span>—The Chestnut or Yellow Oak (name
+in Gray’s Manual Quercus Muhlenbergii) is described as “a tall tree
+with thin <i>flaky</i> bark” (Gray), or “a tree with gray <i>flaky</i> bark”
+(Britton); and in fact many of the White Oaks are said to have
+“<i>flaky</i>” bark. The Quercus acuminata is very abundant in central
+Ohio and is of common occurrence in many parts of the State. It is
+rare that the “flakiness” of the bark or a tendency to separate in
+plates, is pronounced or conspicuous in our Chestnut Oak trees. The
+single good example I have found is here shown in Fig. 1 reproduced
+from a photograph of a specimen growing in Hayden’s ravine near
+Columbus. Both trees shown are the same species but the smaller
+one has merely furrowed, not flaky, bark, and it is a fair representative
+of the trunks of this Oak as they occur in our vicinity. The
+usual form of bark is perhaps more clearly shown in Fig. 2, which
+is from a photograph of a large tree standing near the Horticultural
+Hall of the Ohio State University. This specimen has leaves remarkably
+narrow for Q. acuminata but the trunk is similar in
+appearance to the trees which have broad leaves.</p>
+
+<div class="figcenter">
+ <img src="images/fig1.jpg"
+ alt="furrowed bark">
+ <p class="caption"> <i>Fig. 1.</i></p>
+ </div><!--end figcenter-->
+ 
+<div class="figcenter">
+ <img src="images/fig2.jpg"
+ alt="flaky bark">
+ <p class="caption"> <i>Fig. 2.</i></p>
+ </div><!--end figcenter-->
+ 
+<p class="p2"><span class="smcap">Helianthus maximiliani.</span>—Maximilian’s Sunflower whose
+habitat and range are given in Britton and Brown’s Illustrated Flora
+as “on dry prairies, Minnesota, and Manitoba to the Northwest
+Territory, Nebraska and Texas” may be said to be out of place in
+Ohio. Yet Mr. R. F. Griggs found it (a single plant) in the season of
+1900 (cf. <span class="smcap">O. S. U. Naturalist</span>, 1:16) at Sandusky, Erie County. In a
+package of interesting plants sent to the State Herbarium recently
+by Mr. Otto Hacker, fine herbarium specimens of this conspicuous
+species were furnished. Mr. Hacker says that he observed it near
+Painesville (Lake County) six or seven years ago by railway tracks,
+where it is still flourishing.</p>
+
+<p><span class="smcap">Lotus corniculatus.</span>—This European Lotus, with such common
+names as Bird’s foot, Trefoil, Ground Honeysuckle, Bloom-fell,
+Crowtoes, Cat’s-clover, and Sheepfoot, was collected at Painesville
+by Mr. Otto Hacker in nursery grounds. This is the second time
+this waif has been recorded for Ohio, the first case being reported
+by Mr. Ricksecker, of Oberlin.</p>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h3 class="h3head"><a id="Page_48"></a>NEWS AND NOTES.</h3>
+
+<p>Prof. Thomas A. Williams, editor-in-chief of the Asa Gray
+Bulletin and assistant chief of the Division of Agrostology, U. S.
+Department of Agriculture, died on the morning of Dec. 23, 1900.</p>
+
+
+<p>At the 10th annual meeting of the Ohio State Academy of
+Science, held at Columbus, on December 26 and 27, thirty-one papers
+were read—12 pertaining to botany, 8 to zoology, 6 to geology, 3 to
+meteorology, and 2 to anthropology. The following are the officers
+for the coming year: President, August D. Selby, Wooster; 1st
+Vice Pres., Rev. H. Herzer, Marietta; 2nd Vice Pres, Mrs. W. A.
+Kellerman, Columbus; Secretary, E. L. Moseley, Sandusky; Treasurer,
+Herbert Osborn, Columbus; members of executive committee
+besides the president, secretary and treasurer, Thos. Bonser, Carey;
+Lynds Jones, Oberlin; trustees, F. M. Webster, Wooster; H. C.
+Beardslee, Cleveland; W. R. Lazenby, Columbus; publication committee,
+F. M. Webster, Wooster; John H. Schaffner, Columbus; L.
+H. McFadden, Westerville; Librarian, W. C. Mills, Columbus.</p>
+
+<hr class="short">
+
+<p>Since some criticism has been made, both at home and abroad,
+on the name of <span class="smcap">The O. S. U. Naturalist</span>, it has been thought best
+to make a slight change by dropping the words, State University.
+Although a change in name is unfortunate it will not be very serious
+at the present time and hereafter the name will be <span class="smcap">The Ohio
+Naturalist</span>, which is perhaps more descriptive of the scope of the
+journal and much better for purposes of citation.</p>
+
+<p class="flushright r2">J. H. S.</p>
+</div><!--end chapter-->
+
+<div class="chapter"><!--advertisements-->
+<hr>
+<p class="center muchlarger">Ohio State University</p>
+
+<table>
+<tr><td class="tdl">Six distinct and independent Colleges, each<br>
+&emsp;with a Dean and Faculty of its own.</td>
+    <td class="tdl pad1 vlb"><b><span class="smcap">Agriculture, Arts, Law,</span></b></td></tr>
+
+<tr><td class="tdl pad2">THIRTY SEVEN DEPARTMENTS.</td>
+    <td class="tdl pad2"><b><span class="smcap">Engineering, Pharmacy,</span></b></td></tr>
+
+<tr><td class="tdl pad5">THIRTY DISTINCT COURSES.</td>
+    <td class="tdl pad5"><b><span class="smcap">Veterinary Medicine.</span></b></td></tr>
+</table>
+
+<p>Superior facilities for education in Applied Science. Short or
+special courses for mature students not candidates for degrees.</p>
+
+<p class="center smaller">One hundred and twenty-one instructors. Over thirteen hundred students.<br>
+FINEST GYMNASIUM IN THE WEST.</p>
+
+<p class="smaller"><i>For further information address the President</i>,</p>
+
+<p class="flushright"><span class="smcap"><b>Dr. W. O. Thompson, State University, Columbus</b></span>.</p>
+
+<hr>
+
+<p class="center larger"><b>Ohio Forest Trees Identified by Leaves and Fruit.</b></p>
+
+<p class="center">By <span class="smcap">W. A. Kellerman, Ph. D.</span>, Ohio State University.</p>
+
+<hr class="short">
+
+<p class="smaller">A neat pamphlet for every one who wishes to learn our native forest trees. Keys simple.
+Description plain. Can learn the names of the trees easily.</p>
+
+<p class="smaller">Price reduced from 25 cents to</p>
+<p class="pneg flushright smaller"><b>10 cents.</b></p>
+
+<p class="center">Also, <b>The Fourth State Catalogue of Ohio Plants</b>.</p>
+
+<p class="smaller">Bound copies at cost of binding, namely</p>
+<p class="smaller pneg flushright"><b>20 cents.</b></p>
+
+<p class="p0 center smaller">Gives list of scientific and common names; distribution by counties.</p>
+
+<p class="smaller">Teachers and others will also be interested in Prof. Kellerman’s Phyto-theca or Herbarium
+Portfolio, <i>Practical Studies</i> in Elementary Botany, <cite>Elementary Botany</cite> with Spring Flora, all
+published by Eldredge &amp; Bro., Philadelphia, to whom apply.</p>
+
+<p class="smaller">For information or copies of <cite>Forest Trees</cite> and <cite>Catalogue</cite> or names of plant specimens of
+your region <i>address</i></p>
+
+<p class="flushright r2 smaller "><span class="smcap"><b>W. A. Kellerman, Columbus, Ohio</b></span></p>
+
+<hr>
+
+<p class="center muchlarger">American Entomological Co.</p>
+
+<p class="center smaller">1040 DE KALB AVENUE, BROOKLYN, N. Y.</p>
+
+<p class="center">Lepidoptera Price List No. 2.— <i>Price 5 cents</i> Refunded to Buyers</p>
+
+<p class="center muchsmaller"><span class="smcap">Issued November 15th 1900.</span></p>
+
+<p class="center"><span class="muchsmaller">Dealers of all kinds of</span> <span class="smcap"><i>Entomological <a id="chg6"></a>Supplies</i></span></p>
+
+<p class="center"><span class="muchsmaller">Manufacturers of the Original and Celebrated</span>
+    <span class="larger">SCHMITT INSECT BOXES.</span></p>
+
+<p class="center"><i>Builders of INSECT CABINETS, ETC.</i></p>
+
+<hr>
+
+<p class="center muchlarger">The Twentieth Century Text Books of Biology.</p>
+
+<table>
+<tr><td class="tdl">PLANT RELATIONS, <abbr title="duodecimo">12mo</abbr>, cloth</td>
+    <td class="tdr pad1">$1.10</td></tr>
+<tr><td class="tdl">PLANT STRUCTURES, <abbr title="duodecimo">12mo</abbr>, cloth</td>
+    <td class="tdr">1.20</td></tr>
+<tr><td class="tdl">PLANT STUDIES, <abbr title="duodecimo">12mo</abbr>, cloth</td>
+    <td class="tdr">1.20</td></tr>
+<tr><td class="tdl">PLANTS, <abbr title="duodecimo">12mo</abbr>, cloth</td>
+    <td class="tdr">1.80</td></tr>
+<tr><td class="tdl">ANALYTICAL KEY TO PLANTS, <abbr title="duodecimo">12mo</abbr>, flexible cloth</td>
+    <td class="tdr">.75</td></tr>
+</table>
+
+<p class="center smaller">All by JOHN MERLE COULTER, A. M., Ph. D., Head of Dept. of Botany, University of Chicago.</p>
+
+<p class="center"><i>They are already the preferred texts, and the
+reasons will be apparent on examination.</i></p>
+
+<p class="center large">ANIMAL LIFE: A First Book of Zoology.</p>
+
+<p class="hanging muchsmaller">By DAVID S. JORDAN, M. S., M. D., Ph. D., LL. D., President of the Leland Stanford Junior
+University, and VERNON L. KELLOGG, M. S., Professor in Leland Stanford Junior
+University. <abbr title="duodecimo">12mo</abbr>. Cloth, $1.20. <i>Now ready.</i></p>
+
+<p class="muchsmaller"><i>Not a book for learning the classification, anatomy, and nomenclature of animals, but to
+show how animals reached their present development, the effects of environment, their place
+in Nature, their relations to one another and to the human race. Designed for one-half
+year’s work in high schools. Send for sample pages.</i>
+
+<p class="center">ANIMAL FORMS: A Second Book of Zoology.</p>
+
+<p class="center muchsmaller">By DAVID S. JORDAN, M. S., M. D., Ph. D., LL. D., and HAROLD HEATH, Ph. D.,<br>
+Professor in Leland Stanford Junior University. <i>Ready in February, 1901.</i></p>
+
+<p class="center smaller"><b>D. APPLETON AND COMPANY, Publishers</b>, <i>New York</i>, <i>Chicago</i>, <i>London</i>.</p>
+
+<hr>
+
+<p class="center muchlarger"><span class="smcap">Recent Scientific Works</span>
+
+<p class="drop-cap">I<span class="smcap">n</span> <b>Astronomy</b>, Dr. Simon Newcomb’s new book, published
+October, 1900; in <b>Physics</b>, the Johns Hopkins
+text of Professors Rowland and Ames; also in Physics
+for second and third year high school work, the text
+of Dr. Hoadley, of Swarthmore; in <b>Physiology</b>, the text
+by Drs. Macy and Norris, based on the Nervous System;
+also the <b>High School Physiology</b> indorsed by the W. C.
+T. U., written by Dr. Hewes, of Harvard University; in
+<b>Geology</b>, the <b>Revised “Compend”</b> of Dr. Le Conte, and
+the two standard works of Dana,—The <b>Manual for University
+Work</b>, and the <b>New Text Book</b>, revision and
+rewriting of Dr. Rice, for fourth year high school work;
+in <b>Chemistry</b>, the approved <b>Storer and Lindsay</b>, recommended
+for secondary schools by the leading colleges;
+in <b>Zoology</b>, the <b>Laboratory Manual</b> of Dr. Needham, of
+Cornell; and the Series “<b>Scientific Memoirs</b>” edited by
+Dr. Ames, of Johns Hopkins. Nine volumes ready.</p>
+
+<p class="p0 center">The publishers cordially invite correspondence.</p>
+
+
+<p class="center"><strong>AMERICAN BOOK COMPANY, <span class="smcap">Cincinnati</span></strong></p>
+<hr>
+</div><!--end chapter-->
+
+<div class="chapter">
+<h4 class="h4head">Transcriber’s Note:</h4>
+
+<p>This book was written in a period when many words had not become
+standardized in their spelling. Words may have multiple spelling
+variations or inconsistent hyphenation in the text. These have been
+left unchanged unless indicated below.</p>
+
+<p>Obvious printing errors, such as
+backwards, upside down, reversed, or partially printed letters, were corrected.
+Final stops missing at the end of sentences and abbreviations were
+added.</p>
+
+<p>The following spelling correction were made:</p>
+<ul>
+<li>existance to <a href="#chg1">existence</a></li>
+<li>synonyn to <a href="#chg2">synonym</a></li>
+<li>Onio to <a href="#chg3">Ohio</a></li>
+<li>miscroscopic to <a href="#chg4">microscopic</a></li>
+<li>Querqus to <a href="#chg5">Quercus</a></li>
+<li>Suppies to <a href="#chg6">Supplies</a>.</li>
+</ul>
+</div><!--end chapter-->
+
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK THE OHIO NATURALIST, VOL. 1, NO. 3, JANUARY, 1901 ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
